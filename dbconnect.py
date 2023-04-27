@@ -17,6 +17,7 @@ def user_info(data):
 
 def get_info(user_name):
   with engine.connect() as conn:
+    print(f'getting details of {user_name}')
     s=("SELECT * from users where user_name='%s'" %user_name)
     result=conn.execute(text(s))
     result_all=result.all()

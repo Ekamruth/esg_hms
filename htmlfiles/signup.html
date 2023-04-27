@@ -6,38 +6,36 @@
   <title>ESG HOSPITAL MANAGEMENT SYSTEM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-  <style>
-
-
-  </style>
+  {% include 'form_style.html' %}
+  
 </head>
 <body>
   <div class="container" style="text-align:center">
   <form class="pure-form" action="/acknowledgement" method="post">
     <div class="mt-2 mb-2">
-      <label>First Name</label><br>
-      <input type="text" required name="first_name" placeholder="Naruto">
+      <label for="firstname">First Name</label><br>
+      <input class="form-control" type="text" required name="first_name" placeholder="Naruto">
     </div>
     <div>
       <label class="mb-2">Last Name</label><br>
-      <input type="text" name="last_name" placeholder="Uzumaki">
+      <input class="form-control" type="text" name="last_name" placeholder="Uzumaki">
     </div>
     <div>
       <label class="mb-2">Username</label><br>
-      <input type="text" required name="user_name" placeholder="Naruto9">
+      <input class="form-control" type="text" required name="user_name" placeholder="Naruto9">
     </div>
     <div>
       <label class="mb-2">Email id</label><br>
-      <input type="email" required name="email" placeholder="narutouzumaki@xyz.com">
+      <input class="form-control" type="email" required name="email" placeholder="narutouzumaki@xyz.com">
     </div><br>
     <div>
       <fieldset>
       
-      <input type="password" required id="password" name="password" placeholder="Password">
+      <input class="form-control" type="password" required id="password" name="password" placeholder="Password">
     
-      <input type="password" required id="confirm_password" name="confirm_password" placeholder="Confirm password">
-         <button type="submit" class="pure-button pure-button-primary">Confirm</button>
-      </fieldset>
+      <input class="form-control" type="password" required id="confirm_password" name="confirm_password" placeholder="Confirm password">
+         <button type="submit" class="btn pure-button pure-button-primary">Confirm</button><br>
+      <br></fieldset>
     </div>
     <div>
       <label class="mb-2">Are you a doctor or a patient:</label><br>
@@ -45,24 +43,24 @@
         <option value="doctor">Doctor</option>
         <option value="patient">Patient</option>
       </select>
-    </div>
+    </div><br>
     <div>
       <label class="mb-2">Address</label><br>
-      <input type="text" name="line1" placeholder="line1">
+      <input class="form-control" type="text" name="line1" placeholder="line1">
     </div>
     <div>
       <label class="mb-2">City</label><br>
-      <input type="text" name="city" placeholder="Hyderabad">
+      <input class="form-control" type="text" name="city" placeholder="Hyderabad">
     </div>
     <div>
       <label class="mb-2">State</label><br>
-      <input type="text" name="state" placeholder="Telangana">
+      <input class="form-control" type="text" name="state" placeholder="Telangana">
     </div>
     <div>
       <label class="mb-2">Pincode</label><br>
-      <input type="text" name="pincode" placeholder="500035">
+      <input class="form-control" type="text" name="pincode" placeholder="500035">
     </div>
-    <input type="submit">
+    <button type="submit" class="btn">Signup</button>
     
   </form>
   </div>
